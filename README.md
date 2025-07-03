@@ -1,6 +1,7 @@
-# DSA-FINAL-PROJECTPalmoria Group emp-data Analysis
+# DSA-FINAL-PROJECT
+## Palmoria Group emp-data Analysis
 Methods used
-1. Power BI Desktop was open ,I  Click "Get Data" and select CSV Navigate to file location and  selected  the  Palmoria Group emp-data.csv file. In the preview window, click "Transform Data" to open  Power Query Editor.
+### 1. Power BI Desktop was open ,I  Click "Get Data" and select CSV Navigate to file location and  selected  the  Palmoria Group emp-data.csv file. In the preview window, click "Transform Data" to open  Power Query Editor.
 Data Cleaning was Performed in Power Query Editor:  
  Remove Rows with Null Salaries: Select the "Salary" column. Click the filter icon on the
  column header. Uncheck "null"  and click "OK". Remove
