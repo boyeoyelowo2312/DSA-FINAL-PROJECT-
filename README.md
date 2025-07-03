@@ -20,29 +20,29 @@ Data Cleaning was Performed in Power Query Editor:
  any unique identifier) to "Values" (and set aggregation to "Count"). 
  Chart show the overall proportion of Male, Female, and Undisclosed genders in the company.
  
-Gender Distribution by Regions:
+3.Gender Distribution by Regions:
  Visualization: Clustered Column Chart or Stacked Column Chart. 
 Use  "Location"  for  "Axis", "Gender" to "Legend", and "Name" to "Values" (Count). 
  Display the  gender breakdown for each region (Lagos, Abuja, Kaduna).
 
- Gender Distribution by Departments:
+4. Gender Distribution by Departments:
  Visualization: Stacked Bar Chart or 100% Stacked Bar Chart. 
  "Department" for  "Axis", "Gender" to "Legend", and "Name" to "Values" (Count). 
 This show the  gender composition within each department.
 
-Ratings Based on Gender
+5.Ratings Based on Gender
  Visualization: Clustered Column Chart or Stacked Column Chart.
   "Rating" for "Axis", "Gender" to "Legend", and "Name" to "Values" (Count).
   Chart illustrate how different genders are distributed across performance
  ratings (Very Good, Good, Average, Poor, Very Poor, Not Rated). 
 
-  Gender Pay Gap Analysis
+  6.Gender Pay Gap Analysis
  Calculate Average Salary by Gender:
  Visualization: Clustered Column Chart. Fields: Drag "Gender" to "Axis" and "Salary" to
  "Values" (set aggregation to "Average"). Insight: This will immediately show if there's a
  noticeable difference in average salaries between genders.
 
- Identify Gender Pay Gap by Department and Region:
+ 7.Identify Gender Pay Gap by Department and Region:
  Create a Matrix Visual: Rows: "Department" Columns: "Location" Values: "Salary" (set
  aggregation to "Average") and "Gender" (drag "Gender" to "Columns" as well to split the
  average salary by gender within each department and region). Conditional Formatting:
@@ -50,7 +50,7 @@ Ratings Based on Gender
  This detailed matrix pinpoint specific departments and regions where a gender
  pay gap exists, allowing management to focus their efforts.
 
-  Minimum Salary Requirement Analysis
+  8.Minimum Salary Requirement Analysis
   Create a New Measure (DAX):
  DAX
  Employees Below Minimum = 
@@ -62,7 +62,7 @@ CALCULATE(
  total number of employees earning less than $90,000. You can also create another
  measure for the total number of employees to show the proportion.
 
- Pay Distribution by Salary Band:
+ 9.Pay Distribution by Salary Band:
  Create a New Calculated Column (DAX) for Salary Bands:
  DAX
         Salary Band = 
@@ -87,13 +87,13 @@ CALCULATE(
  and "Name" to "Values" (Count). Insight: This chart will show the number of employees in
  each salary band.
 
- Pay Distribution by Salary Band and Region:
+ 10Pay Distribution by Salary Band and Region:
  Visualization: Stacked Column Chart. Fields: Drag "Salary Band" to "Axis", "Location" to
  "Legend", and "Name" to "Values" (Count). Insight: This will show the salary distribution
  across regions, highlighting which regions have more employees below the $90,000
  threshold.
 
- 6. Bonus Allocation (Requires additional data and rules)
+ 11. Bonus Allocation (Requires additional data and rules)
  Data Preparation for Bonus:
  You would need to load the "another data set that contains rules for making bonus
  payments" into Power BI. Let's assume this data set is named BonusRules.csv and contains
