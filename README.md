@@ -1,4 +1,78 @@
+
 # DSA-FINAL-PROJECT
+##Case Study 1: Amazon Product Review Analysis
+I cleaned the dataset  and convert the data into table
+1. Average discount percentage by product category
+I added a calculated column:
+= (Actual Price - Discounted Price) / Actual Price * 100
+
+Then use a Pivot Table:
+
+Rows: Category
+
+Values: Discount % → summarize by Average
+
+2. How many products are listed under each category
+Pivot Table:
+
+Rows: Category
+
+Values: Product Name → set to Count (Distinct)
+
+3. Total number of reviews per category
+I Used Rating Count column
+
+Pivot Table:
+
+Rows: Category
+
+Values: Rating Count → Sum
+
+4. Which products have the highest average ratings
+I Sort the  dataset by the Average Rating column (descending) and Pick top entries
+
+5. Average actual price vs discounted price by category
+Pivot Table:
+Rows: Category
+Values: Actual Price → Average
+Discounted Price → Average
+
+6. Which products have the highest number of reviews
+I Sorted  Rating Count column in descending order
+
+7.How many products have a discount of 50% or more
+I added calculated column:
+=IF(Discount % >= 50, "Yes", "No")
+
+Then use a COUNTIF
+
+8. Distribution of product ratings
+Pivot Table:
+Rows: Rating  and Values: Product Name → Count.  
+
+9. Total potential revenue by category (Actual Price × Rating Count)
+I added calculated column:
+=Actual Price * Rating Count
+Pivot Table:
+Rows: Category
+Values: Potential Revenue → Sum
+
+10. Number of unique products per price range bucket
+I Create new  sheet Price Bucket:
+
+
+Excel formular=IF(Discounted Price < 200, "<₹200",
+   IF(Discounted Price <= 500, "₹200–₹500", ">₹500")) (they should take note of the symbol for some systems)
+Pivot Table:
+Rows: Price Bucket
+Values: Product Name → Count
+
+11. How does the rating relate to the level of discount
+I Created  a line chart:
+X-axis: Discount %
+Y-axis: Average Rating. 
+
+
 ## Palmoria Group emp-data Analysis
 Methods used
 ### 1. Power BI Desktop was open ,I  Click "Get Data" and select CSV Navigate to file location and  selected  the  Palmoria Group emp-data.csv file. In the preview window, click "Transform Data" to open  Power Query Editor.
