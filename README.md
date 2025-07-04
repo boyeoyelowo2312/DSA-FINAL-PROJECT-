@@ -74,7 +74,7 @@ X-axis: Discount %
 Y-axis: Average Rating. 
 
 
-## Palmoria Group emp-data Analysis
+##  Case Study 3 - Palmoria Group emp-data Analysis
 ### Analysis Steps
 #### 1. Power BI Desktop was open ,I  Click "Get Data" and select CSV Navigate to file location and  selected  the  Palmoria Group emp-data.csv file. In the preview window, click "Transform Data" to open  Power Query Editor.
 Data Cleaning was Performed in Power Query Editor:  
