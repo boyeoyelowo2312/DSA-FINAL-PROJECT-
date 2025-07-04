@@ -1,7 +1,8 @@
 
 # DSA-FINAL-PROJECT
 ##Case Study 1: Amazon Product Review Analysis
-I cleaned the dataset  and convert the data into table
+### Analysis steps 
+#### I cleaned the dataset  and convert the data into table
 1. Average discount percentage by product category
 I added a calculated column:
 = (Actual Price - Discounted Price) / Actual Price * 100
@@ -74,8 +75,8 @@ Y-axis: Average Rating.
 
 
 ## Palmoria Group emp-data Analysis
-Methods used
-### 1. Power BI Desktop was open ,I  Click "Get Data" and select CSV Navigate to file location and  selected  the  Palmoria Group emp-data.csv file. In the preview window, click "Transform Data" to open  Power Query Editor.
+### Analysis Steps
+#### 1. Power BI Desktop was open ,I  Click "Get Data" and select CSV Navigate to file location and  selected  the  Palmoria Group emp-data.csv file. In the preview window, click "Transform Data" to open  Power Query Editor.
 Data Cleaning was Performed in Power Query Editor:  
  Remove Rows with Null Salaries: Select the "Salary" column. Click the filter icon on the
  column header. Uncheck "null"  and click "OK". Remove
